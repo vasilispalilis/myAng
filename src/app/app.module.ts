@@ -10,11 +10,13 @@ import {MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldMod
 
 
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
