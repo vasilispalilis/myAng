@@ -2,11 +2,13 @@ import { Dish } from './dish';
 
 export const DISHES: Dish[] = [
   {
+    id: 0,
     name: '85% Dark Chocolate',
     image: '/assets/images/dark85.jpg',
     category: 'darks',
     label: 'Hot',
     price: '4.99',
+    featured: true,
     description: 'Dark chocolate with no added sugar. Here you can taste the flavor of cocoa beans.',
     comments: [
       {
@@ -36,11 +38,13 @@ export const DISHES: Dish[] = [
     ]
   },
   {
-   name: '75% Dark Chocolate',
+    id: 1,
+    name: '75% Dark Chocolate',
     image: '/assets/images/dark45.jpg',
     category: 'blackwhite',
     label: '',
     price: '1.99',
+    featured: false,
     description: 'Dark chocolate made with a range of cocoa beans from Peru. It is soft with strong flavor.',
     comments: [
       {
@@ -70,11 +74,13 @@ export const DISHES: Dish[] = [
     ]
   },
   {
+    id: 2,
     name: '45% Milk Chocolate',
     image: '/assets/images/milk.jpg',
     category: 'blackwhite',
     label: 'New',
     price: '1.99',
+    featured: false,
     description: 'Milk chocolate made with Madagascar cocoa beans. It is a well-balanced chocolate with milk flavor.',
     comments: [
       {
@@ -104,11 +110,13 @@ export const DISHES: Dish[] = [
     ]
   },
   {
+    id: 3,
     name: '55%, 75% and 85% Chocolates with almonds',
     image: '/assets/images/almonds.jpg',
     category: 'mixed',
     label: '',
     price: '2.99',
+    featured: false,
     description: 'Chocolates of different cocoa beans concentration containing almonds. They are crunchy and have a rich taste.',
     comments: [
       {
