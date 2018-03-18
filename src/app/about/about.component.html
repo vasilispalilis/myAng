@@ -1,3 +1,72 @@
-<p>
-  about works!
-</p>
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+     <div fxFlex>
+            <div>
+               <h3>About Us</h3>
+               <hr>
+            </div>
+     </div>
+      <div fxFlex>
+        <div fxLayout="column" fxLayout.gt-sm="row">
+          <div fxFlex="70">
+              <h2>Create your milk chocolate!</h2>
+              <p>This recipe makes a bar of about 100g.</p>
+              <table class="floatingEl">
+                <tr>
+                  <th>Igredients</th>
+                  <th>Quantity</th>
+                </tr>
+                <tr>
+                  <td>Cocoa butter</td>
+                  <td>50 g</td>
+                </tr>
+                <tr>
+                  <td>Icing sugar</td>
+                  <td>50 g</td>
+                </tr>
+                <tr>
+                  <td>Milk powder (Full fat)</td>
+                  <td>25 g</td>
+                </tr>
+                <tr>
+                  <td>Cocoa powder (Unsweetended)</td>
+                  <td>13 g</td>
+                </tr>
+              </table>
+          </div>
+          <div fxFlex="30">
+              <mat-card>
+                <mat-card-header>
+                  <mat-card-title>
+                  <h2>The milk chocolate</h2>
+                  </mat-card-title>
+                </mat-card-header>
+                  <img img mat-card-image  src="../../assets/images/milk_chocolate.JPG" alt = "milk chocolate"  title = "I love milk chocolate!!">
+              </mat-card>
+            </div>
+        </div>
+      </div>
+
+       <!-- <div fxFlex>
+          <h2>Corporate Leadership</h2>
+          <p>Display the details of the corporate leaders here</p>
+       </div> -->
+
+       <div fxFlex>
+        <h2>Corporate Leadership</h2>
+        <mat-list *ngIf="leaders" >
+
+            <mat-list-item *ngFor="let leader of leaders" >
+              <img mat-list-avatar src={{leader.image}} alt={{leader.name}}>
+              <h1 mat-line> {{leader.name}} </h1>
+              <h1 mat-line> {{leader.designation}} </h1>
+              <p mat-line>
+                <span> {{leader.description}} </span>
+              </p>
+            </mat-list-item>
+        </mat-list>
+      </div>
+</div>
+
+
