@@ -67,6 +67,17 @@
             </mat-list-item>
         </mat-list>
       </div>
+
+            Display the details of the corporate users here
+
+
+       <div fxFlex>
+          <h2>Corporate Users</h2>
+          <mat-list *ngIf="users" >
+
+              <mat-list-item *ngFor="let user of users" >
+                <h1 mat-line> {{user.username}} </h1>
+              </mat-list-item>
+          </mat-list>
+        </div>
 </div>
-
-

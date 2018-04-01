@@ -20,12 +20,11 @@
       </mat-input-container>
       <mat-input-container dividerColor="{{password.invalid && !password.pristine
         ? 'warn' : 'primary'}}">
-        <input matInput placeholder="Password" type="password" [(ngModel)]="user
-          .password" name="password" #password="ngModel" required>
+        <input matInput placeholder="Password" type="password" [(ngModel)]="user.password"
+          name="password" #password="ngModel" required>
           <mat-hint>
               <span [hidden]="password.pristine">
-              <span [hidden]="!password.errors?.required">password is required</span
-                >
+              <span [hidden]="!password.errors?.required">password is required</span>
               </span>
           </mat-hint>
       </mat-input-container>
