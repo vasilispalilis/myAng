@@ -9,7 +9,7 @@ import {MatButtonModule, MatCheckboxModule, MatDatepickerModule, MatFormFieldMod
   MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule} from '@angular/material';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { FormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -49,7 +49,8 @@ import { UserService } from './services/user.service';
     MatSlideToggleModule, MatToolbarModule, MatListModule, MatGridListModule,
     MatCardModule, MatIconModule, MatProgressSpinnerModule, MatDialogModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [DishService, PromotionService, LeaderService, UserService],
   entryComponents: [
